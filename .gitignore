@@ -1,0 +1,12 @@
+*.csv
+*.bak
+*.svg
+*.png
+*.pptx
+*.xlsx
+
+2023/
+alt/
+Excel/
+sql/
+Test/

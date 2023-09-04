@@ -1,0 +1,32 @@
+
+@set DataPath=z:\Save\TSS\Reporting\MBR
+@set PyPath=..\..\Template\Scripts
+@set /p month=<Data-IN\month.txt
+@set /p year=<Data-IN\year.txt
+
+@if "%year%" == ""  (
+	echo Year nicht gesetzt!
+	goto ende
+)
+
+@copy \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\Data-IN\*.csv Data-IN  /y
+@copy \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\Data-IN\*.xlsx Data-IN /y
+@ rem copy \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\Data-IN\Dipps\TTE_2023_02_KA_Nettowerte_Pos.csv Data-IN\TTE_KA_Nettowerte_Pos.csv   /Y
+@ rem copy \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\Data-IN\Dipps\DI_2023_02_KA_Nettowerte_Pos.csv Data-IN\DI_KA_Nettowerte_Pos.csv  /Y
+@ rem copy \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\Data-IN\Dipps\TTE_2023_02_Rechnungen.csv Data-IN\TTE_Rechnungen.csv  /Y
+@ rem copy \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\Data-IN\Dipps\DI_2023_02_Rechnungen.csv Data-IN\DI_Rechnungen.csv  /Y
+copy \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\Data-IN\Dipps\*.csv Data-IN\  /Y
+
+@python "%PyPath%\PrepareTemplate.py" "%DataPath%\%year%\%month%" %month% %year%
+@python "%PyPath%\ProcessData.py" "%DataPath%\%year%\%month%" %month% %year%
+@python "%PyPath%\BuildCharts.py" "%DataPath%\%year%\%month%" %month% %year%
+@python "%PyPath%\UpdatePPT.py" "%DataPath%\%year%\%month%" %month% %year%
+
+@move /Y *.csv tmp
+@move /Y *.svg tmp
+@move /Y *.png tmp
+
+@copy * \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\ /Y 
+
+:ende
+pause
