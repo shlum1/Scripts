@@ -31,7 +31,7 @@ rem "%DataPath%\%year%\%month%" %month% %year%
 
 mkdir \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\
 xcopy * \\di-daten\verwaltung\GL\TSS\MBR\%year%\%month%\  /S
-del TTE-MBR-%year%-%month%.pptx
+del TTE-MBR-%year%-%month%_leer.pptx
 
 @echo ---------- Script fertig ----------
 @goto END

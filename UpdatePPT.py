@@ -47,6 +47,7 @@ def DoInvoiceImg(slide, sComp, slidename):
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #
+'''
 slideNames = {
     'Title:': None, #1
     'BU Analytics:Month:cons.': None, #2
@@ -71,7 +72,26 @@ slideNames = {
     'HR, Sick leave:': None,#21
     'Thanks:': None #22
 } 
-
+'''
+slideNames = {
+    'Title:': None, #1
+    'BU Analytics:Mtd:TTE.': None, #2
+    'BU Analytics:Mtd:DI.': None, #3
+    'BU Analytics:Mtd:': None, #4
+    'BU Analytics:Forecast:': None, #5
+    'Sales:Offers:DI': None, #6
+    'Sales:Offers:TTE': None, #7
+    'Sales:Sales statistics:DI': None, #8
+    'VBP:Status VBP 23-24:': None, #9
+    'Special Topics:': None, #10
+    'EBITA Bridge 2023-2024:': None, #11
+    'PS:Projektstatus:DI': None, #12
+    'PS:Projektstatus:TTE': None, #13
+    'MS:Entwicklung Recurring:': None, #14
+    'CS:Tickets:TTE': None,#15
+    'HR:Sick leave:': None,#16
+    'Thanks:': None #17
+} 
 
 
 

@@ -7,7 +7,7 @@ try:
     #import math
 
 
-    sVersion = "ProcessData v. 2023-04-06.008"
+    sVersion = "ProcessData v. 2023-09-04.009"
 
 
 
@@ -501,21 +501,26 @@ if __name__ == '__main__':
         print("Usage: python won&lost.py <path> <month>")
         #exit(1)
 
-    fTemplate = f'{path}/{sExcelDir}/Templates.xlsx'
-    
-    print(fTemplate, gYear, month)
+    try:
+        fTemplate = f'{path}/{sExcelDir}/Templates.xlsx'
+        
+        print(fTemplate, gYear, month)
 
-    #Process_Offers(path, month)
+        #Process_Offers(path, month)
 
-    Process_OrdersDetail(path, month)   
-    Process_WonLost(path, month)
-    ####Process_Invoices(path, month)  
-    
+        Process_OrdersDetail(path, month)   
+        #Process_WonLost(path, month)
+        ####Process_Invoices(path, month)  
+        
 
-    print('... ProcessData -done- \n\n')
+        print('... ProcessData -done- \n\n')
 
+    except Exception as e:
+        print("******** ERROR in ProcessData *********")
+        print(e)          
 
-    
+        exit(-1)
+        
 
 '''
 
