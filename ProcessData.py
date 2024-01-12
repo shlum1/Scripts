@@ -12,7 +12,8 @@ try:
 
 
 
-    gYear = '2024'
+    gYear = '2023'
+    #gYear = '2024'
 
     sCompanies = ['DI', 'TTE']
 
@@ -508,7 +509,7 @@ if __name__ == '__main__':
 
         #Process_Offers(path, month)
 
-        Process_OrdersDetail(path, month)   
+        #----> 12.01.2024 Process_OrdersDetail(path, month)   
         #Process_WonLost(path, month)
         ####Process_Invoices(path, month)  
         

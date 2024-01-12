@@ -24,6 +24,7 @@ from sys import argv
 
 sVersion = "UpdatePPT v. 2023-08-15.005"
 gYear = 2023
+#gYear = 2024
 
 
 

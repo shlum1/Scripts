@@ -8,6 +8,7 @@ import pandas as pd
 
 import warnings
 
+sVersion = "ExportQuery v. 2024-01-12.003"
 
 if len(sys.argv) == 4:
     path = sys.argv[1]
@@ -17,11 +18,16 @@ else:
     sm = datetime.today().strftime("%m")
     month = f"{int(sm)-1:02}"
     year  = datetime.today().strftime("%Y")
-    path = f"z:/Save/TSS/Reporting/MBR/{year}/{month}/DATA-IN/" 
+    
+if month == '00':  #run in January -> use last December
+    month = '12'
+    year = str(int(year) - 1)
+    
+path = f"z:/Save/TSS/Reporting/MBR/{year}/{month}/DATA-IN/" 
 
 sqlPath = 'v:/GL/TSS/MBR/sql/'
 
-print ("ExportQry::")
+print (f"ExportQry:: {sVersion}" )
 print("Month: ", month) 
 print("Year: ", year)
 print("Path: ", path)
@@ -105,7 +111,7 @@ try:
     exit(0)
 
 except Exception as e:
-    print("******** ERROR in ExportQry *********")
+    print(f"******** ERROR in ExportQry  *********")
     print(e)          
 
     exit(-1)      
