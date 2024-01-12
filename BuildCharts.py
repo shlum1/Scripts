@@ -22,9 +22,9 @@ import locale
 from sys import argv
 
 
-sVersion = "BuildCharts v. 2023-03-21.005"
+sVersion = "BuildCharts v. 2024-01-12.006"
 
-gYear = '2023'
+gYear = '2024'
 sCompanies = ['DI', 'TTE']
 sDataDir="xx/Data-IN"
 showChart = False

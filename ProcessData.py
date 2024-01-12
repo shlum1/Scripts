@@ -7,12 +7,12 @@ try:
     #import math
 
 
-    sVersion = "ProcessData v. 2023-09-04.009"
+    sVersion = "ProcessData v. 2024-01-12.010"
 
 
 
 
-    gYear = '2023'
+    gYear = '2024'
 
     sCompanies = ['DI', 'TTE']
 

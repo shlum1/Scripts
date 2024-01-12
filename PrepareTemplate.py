@@ -6,9 +6,9 @@ from shutil import copy2 as cp
 import glob
 
 
-sVersion = "PrepareTemplate v. 2023-08-15.006"
+sVersion = "PrepareTemplate v. 2024-01-12.007"
 
-sYear = '2023'
+sYear = '2024'
 
 print('#### ', sVersion)
 
