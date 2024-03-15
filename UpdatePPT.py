@@ -77,22 +77,25 @@ slideNames = {   #2024-03-15.006
 '''
 slideNames = {   #2024-03-15.006
     'Title:': None, #1
-    'BU Analytics:Mtd:TTE.': None, #2
-    'BU Analytics:Mtd:DI.': None, #3
-    'BU Analytics:Mtd:': None, #4
-    'BU Analytics:Forecast:': None, #5
-    'Sales:Offers:DI': None, #6
-    'Sales:Offers:TTE': None, #7
-    'Sales:Sales statistics:DI': None, #8
-    'VBP:Status VBP 23-24:': None, #9
-    'Special Topics:': None, #10
-    'EBITA Bridge 2023-2024:': None, #11
-    'PS:Projektstatus:DI': None, #12
-    'PS:Projektstatus:TTE': None, #13
-    'MS:Entwicklung Recurring:': None, #14
-    'CS:Tickets:TTE': None,#15
-    'HR:Sick leave:': None,#16
-    'Thanks:': None #17
+    'BU Analytics:Month:TTE.': None, #2
+    'BU Analytics:Month:DI': None, #3
+    'BU Analytics:Month:sum': None, #4
+    'BU Analytics:Year:cons.': None, #5
+    'BU Analytics:Balance:sum': None, #6
+    'Sales:Offers History:DI': None, #7
+    'Sales:Offers History:TTE': None, #8
+    'Sales:Biggest Offers:DI': None, #9
+    'Sales:Biggest Offers:TTE': None, #10
+    'Sales:Special Topics:DI': None, #11
+    'Sales:Special Topics:TTE': None, #12
+    'VBP:Status VBP:DI:': None, #13
+    'VBP:Status VBP:DI:': None, #14
+    'Sales:Attrition:': None, #15
+    'PS:WIP:DI': None, #16
+    'PS:WIP:TTE': None, #17
+    'CS:Tickets:TTE': None,#18
+    'HR:Sick leave:': None,#19
+    'Thanks:': None #20
 } 
 
 
