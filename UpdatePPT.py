@@ -22,7 +22,7 @@ import pandas as pd
 from sys import argv
 
 
-sVersion = "UpdatePPT v. 2023-08-15.005"
+sVersion = "UpdatePPT v. 2024-03-15.006"
 gYear = 2023
 #gYear = 2024
 
@@ -49,18 +49,19 @@ def DoInvoiceImg(slide, sComp, slidename):
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #
 '''
-slideNames = {
+slideNames = {   #2024-03-15.006
     'Title:': None, #1
-    'BU Analytics:Month:cons.': None, #2
-    'BU Analytics:Year:cons.': None, #3
-    'BU Analytics:Month:DI': None, #4
-    'BU Analytics:Year:DI': None, #5
-    'BU Analytics:Month:TTE': None, #6
-    'BU Analytics:Year:TTE': None, #7
-    'Sales:Offers History:DI': None, #8
-    'Sales:Offers History:TTE': None, #9
-    'Sales:Offers at customer:': None, #10
-    'Sales:Won and Lost:': None, #11
+    'BU Analytics:Month:TTE.': None, #2
+    'BU Analytics:Month:DI': None, #3
+    'BU Analytics:Month:sum': None, #4
+    'BU Analytics:Year:cons.': None, #5
+    'BU Analytics:Balance:sum': None, #6
+    'Sales:Offers History:DI': None, #7
+    'Sales:Offers History:TTE': None, #8
+    'Sales:Biggest Offers:DI': None, #9
+    'Sales:Biggest Offers:TTE': None, #10
+
+        'Sales:Won and Lost:': None, #11
     'VBP:Ongoing efforts:': None, #12
     'WIP:Orders Backlog:DI': None, #13
     'WIP:Orders Backlog:TTE': None, #14
@@ -74,7 +75,7 @@ slideNames = {
     'Thanks:': None #22
 } 
 '''
-slideNames = {
+slideNames = {   #2024-03-15.006
     'Title:': None, #1
     'BU Analytics:Mtd:TTE.': None, #2
     'BU Analytics:Mtd:DI.': None, #3

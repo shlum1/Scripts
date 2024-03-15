@@ -8,8 +8,8 @@ import glob
 
 sVersion = "PrepareTemplate v. 2024-01-12.007"
 
-sYear = '2023'
-#sYear = '2024'
+#sYear = '2023'
+sYear = '2024'
 print('#### ', sVersion)
 
 
